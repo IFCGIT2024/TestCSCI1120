@@ -43,7 +43,7 @@ async function loadQuestions() {
         initSetup();
     } catch (err) {
         console.error('ERROR: Could not load questions:', err);
-        alert('Error: Could not load quiz questions. Make sure the server is running.');
+        alert('Error: Could not load quiz questions.\n\nDetails: ' + err.message + '\n\nIf running locally, make sure the server is running (START_SERVER.bat / START_SERVER.command).');
     }
 }
 
